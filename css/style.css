@@ -22,6 +22,71 @@ body {
 }
 
 
+/* FORMULARIO */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 3px #cccccc inset;
+    background: whitesmoke;
+    padding: 2px 1px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+selec:focus {
+    border: 1px solid #70b231;
+    color: #000000;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    border-radius: 2px;
+    border: 1px solid green;
+    width: 60px;
+    padding: 3px;
+    background: #70b231;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+    box-shadow: 0px 0px 3px gray inset;
+    box-shadow: 0px 0px 1px #cccccc;
+}
+
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #529125;
+}
+
+a:hover {
+    color: #285616;
+}
+
+
 /* CABEZERA */
 
 #header {
@@ -142,4 +207,95 @@ body {
 #nav>ul>li:hover>ul>li:hover {
     box-shadow: 0px 0px 3px #cccccc inset;
     background: rgb(197, 197, 197);
+}
+
+
+/* CONTENIDO */
+
+#content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+}
+
+
+/* BARRA LATERAL */
+
+#aside,
+#frase {
+    clear: both;
+    width: 250px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 3px 3px #cccccc;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase {
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 10px 8px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child {
+    margin-bottom: 20px;
+}
+
+#aside h3 {
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background: #f2f3f2;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+}
+
+#aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+
+/* FORMULARIO BARRA LATERAL */
+
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="password"],
+#aside div input[type="email"],
+#aside div a {
+    display: block;
+    width: 95%;
+    margin-top: 2PX;
+    margin-bottom: 2PX;
+}
+
+#aside div input[type="submit"],
+#aside div input[type="button"],
+#aside div button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#aside input,
+#aside label {
+    margin: 0 auto;
+    text-align: center;
 }
