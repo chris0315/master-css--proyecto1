@@ -8,6 +8,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#webSymbolsRegular") format("svg"), url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#ieflix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.woff") format("woff"), url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* ESTILO GENERALES */
 
@@ -27,6 +42,17 @@ body {
 
 .blue {
     color: #0c73f2 !important;
+}
+
+.orange {
+    color: #d69d2a !important;
+}
+
+.icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 8px;
+    margin-top: -2px;
 }
 
 
@@ -231,7 +257,6 @@ a:hover {
 
 #aside,
 #frase {
-    clear: both;
     width: 250px;
     float: left;
     margin: 30px;
@@ -242,6 +267,9 @@ a:hover {
 }
 
 #frase {
+    width: 250px;
+    position: absolute;
+    top: 1230px;
     padding: 10px;
     font-size: 14px;
     font-family: sans-serif, Arial, Helvetica;
@@ -306,4 +334,56 @@ a:hover {
 #aside label {
     margin: 0 auto;
     text-align: center;
+}
+
+
+/* secciones */
+
+#section {
+    float: left;
+    width: 70%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+}
+
+#section .titulo {
+    font-family: "fajala";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: -20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#section section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#section .article {
+    margin: 20px 10px 20px 10px;
+}
+
+#section .date {
+    color: gray;
+    font-size: 14px;
+}
+
+#section .stickerone,
+#section .stickertwo {
+    position: absolute;
+    margin-top: -42px;
+    z-index: 0;
+}
+
+#section .stickertwo {
+    margin-left: 59%;
 }
